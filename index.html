@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hostel Complaints Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">🏠 Hostel Complaints</div>
+    <ul>
+      <li><a href="#" class="active">Dashboard</a></li>
+      <li><a href="#" id="addComplaint">+ Submit</a></li>
+    </ul>
+  </nav>
+
+  <section class="dashboard">
+    <h1>Dashboard</h1>
+    <p>Track and manage hostel complaints efficiently</p>
+
+    <div class="stats">
+      <div class="card" id="total">Total: 0</div>
+      <div class="card" id="pending">Pending: 0</div>
+      <div class="card" id="progress">In Progress: 0</div>
+      <div class="card" id="resolved">Resolved: 0</div>
+    </div>
+
+    <h2>Recent Complaints</h2>
+    <div id="complaintList" class="complaints"></div>
+  </section>
+
+  <div id="formPopup" class="popup hidden">
+    <div class="popup-content">
+      <h3>Submit Complaint</h3>
+      <input id="name" placeholder="Your Name">
+      <input id="room" placeholder="Room Number">
+      <input id="category" placeholder="Category (e.g. Internet)">
+      <textarea id="issue" placeholder="Describe the issue"></textarea>
+      <button id="submitBtn">Submit</button>
+      <button id="closeBtn">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
