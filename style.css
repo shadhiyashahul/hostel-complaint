@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f6f9fc;
+  margin: 0;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar .logo {
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #2563eb;
+}
+
+.dashboard {
+  padding: 2rem;
+}
+
+.stats {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.card {
+  flex: 1;
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.complaints {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.complaint {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.status {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+.Pending { background: #fde047; }
+["In Progress"] { background: #fbbf24; }
+.Resolved { background: #86efac; }
+
+.popup {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex; align-items: center; justify-content: center;
+}
+
+.popup-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.hidden { display: none; }
+
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
